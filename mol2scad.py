@@ -2,8 +2,11 @@ from mol.parser import parse as parseMol
 import solid as sld
 import mendeleev
 import webcolors
+from warnings import warn
 
 from plumbum import cli
+
+warn("We have moved from M$ GitHub to https://codeberg.org/KOLANICH-physics/mol2scad.py , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
 
 class rot2Vec(sld.OpenSCADObject):
 	def __init__(self, v2, v1=[0, 0, 1]):
